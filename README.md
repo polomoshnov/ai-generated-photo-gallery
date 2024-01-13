@@ -1,6 +1,6 @@
 > [!NOTE]  
-> This is an AI generated app that I asked to create in order to demonstrate the programming capabilities of the AI-powered chat feature of Microsoft Bing. The whole conversion is provided in the "Conversation with AI.pdf" file included in this repo. The outcome of this conversion is presented in this repo 
-with minor tweaks to the directory structure and the addition of `checkIfPathExists` in the server.js to make the app work properly. The conversion happened on January 13, 2024.
+> This is an AI generated app that I asked to create in order to demonstrate the programming capabilities of the AI-powered chat feature of Microsoft Bing. The whole conversation is provided in the "Conversation with AI.pdf" file included in this repo. The outcome of this conversation is presented in this repo 
+with minor tweaks to the directory structure and the addition of `checkIfPathExists` in the server.js to make the app work properly. The conversation happened on January 13, 2024.
 
 # Photo Gallery
 
