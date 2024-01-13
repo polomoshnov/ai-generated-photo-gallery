@@ -1,0 +1,35 @@
+doctype html
+html
+  head
+    title Photo Details
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css')
+    style.
+      .photo {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+  body
+    .container
+      h1 Photo Details
+      img.photo(src='/uploads/resized/' + file, alt=file)
+      ul.list-group
+        li.list-group-item
+          strong Camera model: 
+          span= exif.tags.Model
+        li.list-group-item
+          strong Date taken: 
+          span= exif.tags.DateTimeOriginal
+        li.list-group-item
+          strong Focal length: 
+          span= exif.tags.FocalLength + ' mm'
+        li.list-group-item
+          strong Aperture: 
+          span= 'f/' + exif.tags.FNumber
+        li.list-group-item
+          strong Exposure time: 
+          span= exif.tags.ExposureTime + ' s'
+        li.list-group-item
+          strong ISO speed: 
+          span= exif.tags.ISO
+      a.btn.btn-secondary(href='/') Back to gallery

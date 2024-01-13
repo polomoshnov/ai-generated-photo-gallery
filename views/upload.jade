@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title Upload a photo
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css')
+  body
+    .container
+      h1 Upload a photo
+      form(action='/upload', method='post', enctype='multipart/form-data')
+        .form-group
+          label(for='photo') Choose a photo
+          input#photo.form-control-file(type='file', name='photo', accept='image/*')
+        .form-group
+          button.btn.btn-primary(type='submit') Upload
+      a.btn.btn-secondary(href='/') Back to gallery
